@@ -1,0 +1,27 @@
+body {
+    font-size: 16px;
+    width: 80vw;
+}
+
+header {
+    font-size: 150%;
+    padding: 2em;
+    margin-bottom: 10rem;
+    height: 90vh;
+    width: 1000px;
+}
+
+.text {
+    font-size: 3em;
+    padding: 10%;
+}
+
+%(fonts) 150% -> x% * parent font-size -> 24px
+%(length) 10% -> x% * parent width -> 100px
+
+em(font) 3em -> x * parent font-size -> 71 (3 * 24)
+em(length) 2em -> x * current element font-size -> 48 (2 * 24)
+rem 10rem -> x * root element font-size -> 160px
+
+vh 90vh -> x * 1% viewport height -> 90% of current viewport height
+vw 80vw -> x * 1% viewport width -> 80% of current viewport width
